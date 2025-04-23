@@ -1,0 +1,32 @@
+.contacts {
+  scroll-margin-top: 60px;
+  padding: 40px 16px;
+  @media screen and (min-width: 1250px) {
+    padding: 80px 16px;
+  }
+}
+.container_contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts_list {
+  order: 3;
+  display: flex;
+  flex-direction: column;
+}
+.contacts_list_item {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dark-gray);
+}
+.contacts_list_item span {
+  font-weight: 500;
+  font-size: 18px;
+  @media screen and (min-width: 1250px) {
+    font-weight: 400;
+  }
+}
+.contacts_list_item address {
+  display: inline;
+}

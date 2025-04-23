@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Be+Vietnam+Pro:400,400italic,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:400,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Albert+Sans:regular);
+@import './reset.css';
+
+@import './header.css';
+@import './footer.css';
+
+@import './about.css';
+@import './faq.css';
+@import './comments.css';
+@import './features.css';
+@import './uniqueness.css';
+@import './hero.css';
+@import './reviews.css';
+@import './questions.css';
+@import './cookies.css';
+@import './contacts.css';
+
+:root {
+  --font-family: 'Be Vietnam Pro', sans-serif;
+  --second-family: 'Inter', sans-serif;
+  --third-family: 'Albert Sans', sans-serif;
+  --black: #020304;
+  --dark-gray: #4a4a4a;
+  --gray: #d5d5d5;
+  --light-gray: #fafafa;
+  --white: #fff;
+  --d-orange: #b46000;
+  --orange: #ffaf01;
+  /* ______ */
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  /* ______ */
+}
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1250px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-name {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--d-orange);
+  order: 1;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1250px) {
+    font-size: 18px;
+  }
+}
+.section-name::before {
+  content: '';
+  display: inline-block;
+  background-color: var(--d-orange);
+  border-radius: 50%;
+  width: 6px;
+  min-width: 6px;
+  height: 6px;
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+
+.section_title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--black);
+  order: 2;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1250px) {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+    margin-bottom: 80px;
+  }
+}
