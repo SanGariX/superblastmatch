@@ -1,7 +1,6 @@
 export const openBar = () => {
   const btn1 = document.querySelector('.header-nav-mobile-button');
   btn1.addEventListener('click', () => {
-    console.log('1111');
     const navBar = document.querySelector('.header-nav-mobile');
     navBar.classList.toggle('active');
   });

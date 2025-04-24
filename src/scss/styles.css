@@ -16,6 +16,7 @@
 @import './questions.css';
 @import './cookies.css';
 @import './contacts.css';
+@import './pages.css';
 
 :root {
   --font-family: 'Be Vietnam Pro', sans-serif;
